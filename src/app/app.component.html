@@ -1,0 +1,18 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>{{ title }}</h1>
+ 
+<div id="barContainer" align="center"></div>
+		
+	<div id="btnHolder" width="100%">
+    <select id="barController" name="ngvalueselect" ng-model="data.model" title="Change Selection">
+     <option [disabled]="true" [selected]="true">Select Progress Bar...</option>
+      <option *ngFor="let option of options" value="{{option.value }}" >
+      <!-- ng-repeat="let option in options" ng-value="option.value"-->{{option.text}}</option>
+    </select>
+    </div>
+
+    
+<div id="errorHandling" class="error"></div>
+</div>
+  
